@@ -501,7 +501,7 @@ public class EventHubClientBuilder
      * Sets the name of the Event Hub to connect the client to.
      *
      * @param eventHubName The name of the Event Hub to connect the client to.
-    
+
      * @return The updated {@link EventHubClientBuilder} object.
      * @throws IllegalArgumentException if {@code eventHubName} is an empty string.
      * @throws NullPointerException if {@code eventHubName} is null.
@@ -858,7 +858,7 @@ public class EventHubClientBuilder
      *
      * @return The updated {@link EventHubClientBuilder} object.
      */
-    EventHubClientBuilder scheduler(Scheduler scheduler) {
+    public EventHubClientBuilder scheduler(Scheduler scheduler) {
         this.scheduler = scheduler;
         return this;
     }
@@ -868,7 +868,7 @@ public class EventHubClientBuilder
      *
      * @return The scheduler.
      */
-    Scheduler getScheduler() {
+    public Scheduler getScheduler() {
         return this.scheduler;
     }
 
